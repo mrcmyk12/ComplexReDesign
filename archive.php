@@ -1,5 +1,9 @@
-<?php get_header(); ?>
+<?php
 
+    get_header(); ?>
+<div class="row" style="margin-top: 25px;">
+    <h1><?php the_archive_title(); ?></h1>
+</div>
 <div class="row" style="margin-top: 25px">
 	<!--Carousel Section-->
 	<div class="col-7">
@@ -31,15 +35,7 @@
 				></button>
 			</div>
 			<div class="carousel-inner">
-                <?php
-                    $top_story_query = new WP_QUERY(array(
-                        'posts_per_page' => 1
-                    ));
-
-                    while($top_story_query->have_posts()){
-                        $top_story_query->the_posts();
-                        ?>
-                        <div class="carousel-item active">
+				<div class="carousel-item active">
 					<a href="single.html">
 						<img
 							src="https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
@@ -48,13 +44,13 @@
 						/>
 					</a>
 					<div class="carousel-caption d-none d-md-block">
-						<h5><?php the_title(); ?></h5>
-						<p><?php the_excerpt(); ?></p>
+						<h5>First Slide Label</h5>
+						<p
+							>Some representative placeholder content for the first
+							slide</p
+						>
 					</div>
 				</div>
-
-                    <?php }
-                ?>
 				<div class="carousel-item">
 					<a href="single.html">
 						<img
@@ -407,36 +403,127 @@
 		</div>
 	</div>
 	<div class="row">
-        <?php 
-
-            while(have_posts()) {
-                the_post(); ?>
-                <div class="col-3">
-			        <a href="single.html">
-                        <img
-                            class="img-thumbnail"
-                            src="https://images.pexels.com/photos/1252873/pexels-photo-1252873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                        />
-			        </a>
-		        </div>
-                <div class="col-7">
-                    <a href="<?php the_permalink(); ?>">
-                        <h2><?php the_title(); ?></h2>
-                    </a>
-                        <p><?php the_excerpt(); ?></p>
-                        <p><?php echo get_the_category_list(','); ?></p>
-                </div>
-                <?php }?>
+		<div class="col-3">
+			<a href="single.html">
+				<img
+					class="img-thumbnail"
+					src="https://images.pexels.com/photos/1252873/pexels-photo-1252873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+				/>
+			</a>
+		</div>
+		<div class="col-7">
+			<a href="single.html">
+				<h1>Article Headline Goes Here</h1>
+			</a>
+			<p
+				>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+				soluta ipsum repellat quaerat consequatur quod, eaque perspiciatis
+				dolor architecto numquam unde quae iste fugiat earum minus non hic
+				est voluptates!</p
+			>
+			<a href="#">
+				<p>-By Author</p>
+			</a>
+		</div>
 	</div>
-    <div class="row">
-        <div class="col-3">
-        </div>
-        <div class="col-7">
-        <button class="btn btn-dark" style="width:auto" type="button">Load More Stories...</button>
-        </div>
-    </div>
+	<div class="row">
+		<div class="col-3">
+			<a href="single.html">
+				<img
+					class="img-thumbnail"
+					src="https://images.pexels.com/photos/1252873/pexels-photo-1252873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+				/>
+			</a>
+		</div>
+		<div class="col-7">
+			<a href="single.html">
+				<h1>Article Headline Goes Here</h1>
+			</a>
+			<p
+				>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+				soluta ipsum repellat quaerat consequatur quod, eaque perspiciatis
+				dolor architecto numquam unde quae iste fugiat earum minus non hic
+				est voluptates!</p
+			>
+			<a href="#">
+				<p>-By Author</p>
+			</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-3">
+			<a href="single.html">
+				<img
+					class="img-thumbnail"
+					src="https://images.pexels.com/photos/1252873/pexels-photo-1252873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+				/>
+			</a>
+		</div>
+		<div class="col-7">
+			<a href="single.html">
+				<h1>Article Headline Goes Here</h1>
+			</a>
+			<p
+				>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+				soluta ipsum repellat quaerat consequatur quod, eaque perspiciatis
+				dolor architecto numquam unde quae iste fugiat earum minus non hic
+				est voluptates!</p
+			>
+			<a href="#">
+				<p>-By Author</p>
+			</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-3">
+			<a href="single.html">
+				<img
+					class="img-thumbnail"
+					src="https://images.pexels.com/photos/1252873/pexels-photo-1252873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+				/>
+			</a>
+		</div>
+		<div class="col-7">
+			<a href="single.html">
+				<h1>Article Headline Goes Here</h1>
+			</a>
+			<p
+				>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+				soluta ipsum repellat quaerat consequatur quod, eaque perspiciatis
+				dolor architecto numquam unde quae iste fugiat earum minus non hic
+				est voluptates!</p
+			>
+			<a href="#">
+				<p>-By Author</p>
+			</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-3">
+			<a href="single.html">
+				<img
+					class="img-thumbnail"
+					src="https://images.pexels.com/photos/1252873/pexels-photo-1252873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+				/>
+			</a>
+		</div>
+		<div class="col-7">
+			<a href="single.html">
+				<h1>Article Headline Goes Here</h1>
+			</a>
+			<p
+				>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+				soluta ipsum repellat quaerat consequatur quod, eaque perspiciatis
+				dolor architecto numquam unde quae iste fugiat earum minus non hic
+				est voluptates!</p
+			>
+			<a href="#">
+				<p>-By Author</p>
+			</a>
+		</div>
+	</div>
 </div>
 
-<?php
-get_footer();
+   <?php get_footer();
+
 ?>

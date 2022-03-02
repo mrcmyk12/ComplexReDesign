@@ -26,22 +26,40 @@
 						>
 							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 								<li class="nav-item">
-									<a class="nav-link" href="<?php echo site_url('/music') ?>"><h5>Music</h5></a>
+									<a class="nav-link" href="<?php echo site_url('/music') ?>"><h5 <?php 
+									if(is_page('music')){
+										echo 'class="current-menu-item"';
+									} ?>>Music</h5></a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="<?php echo site_url('/style') ?>"><h5>Style</h5></a>
+									<a class="nav-link" href="<?php echo site_url('/style') ?>"><h5 <?php 
+									if(is_page('style')){
+										echo 'class="current-menu-item"';
+									} ?>>Style</h5></a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="<?php echo site_url('/sports-page') ?>"><h5>Sports</h5></a>
+									<a class="nav-link" href="<?php echo site_url('/sports-page') ?>"><h5 <?php 
+									if(is_page('sports-page')) {
+										echo 'class="current-menu-item"';
+									} ?>>Sports</h5></a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="<?php echo site_url('/pop-culture') ?>"><h5>Pop Culture</h5></a>
+									<a class="nav-link" href="<?php echo site_url('/pop-culture') ?>"><h5 <?php 
+									if(is_page('pop-culture')) {
+										echo 'class="current-menu-item"';
+									} ?>>Pop Culture</h5></a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="<?php echo site_url('/life') ?>"><h5>Life</h5></a>
+									<a class="nav-link" href="<?php echo site_url('/life') ?>"><h5 <?php 
+									if(is_page('life')){
+										echo 'class="current-menu-item"';
+									} ?>>Life</h5></a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="<?php echo site_url('/sneakers') ?>"><h5>Sneakers</h5></a>
+									<a class="nav-link" href="<?php echo site_url('/sneakers') ?>"><h5 <?php 
+									if(is_page('sneakers')){
+										echo 'class="current-menu-item"';
+									} ?>>Sneakers</h5></a>
 								</li>
 								<li class="nav-item">
 									<a>

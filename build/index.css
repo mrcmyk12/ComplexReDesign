@@ -79,14 +79,7 @@ p{
 
 }
 
-/* Rectangle 32 */
-/* 
-position: absolute;
-width: 462px;
-height: 452px;
-left: 477px;
-top: 1194px;
-
-background: #FFFFFF;
-border: 2px solid #000000;
-box-sizing: border-box; */
+.current-menu-item{
+    font-weight: 900;
+    color: black;
+}
